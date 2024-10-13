@@ -1,0 +1,67 @@
+*{
+    margin:0%;
+}
+.head
+{
+    
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    word-spacing: 20px;
+
+    font-size: x-large;
+   
+}
+.img{
+    height:1600px;
+    padding-top: 30%;
+    width:100%;
+    text-align: center;
+}
+.content{
+    color: rgb(252, 241, 241);
+    position: absolute;
+    left: 40%;
+    right: 30%;
+    top: 30%;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+}
+#h1
+{
+    font-size: 60px;
+}
+#p1
+{
+    font-size: 27px;
+}
+#b1
+{
+    font-size: xx-large;
+  color: azure;
+  background-color: black;
+}
+#b2
+{
+    font-size: xx-large;
+    background-color: bisque;
+}
+.a{
+    padding-left: 40%;
+    font-size: larger;
+}
+.a2{
+   
+    font-size: larger;
+}
+.a3{
+    font-size: larger;
+}
+.a4{
+    
+    font-size: larger;
+}
+.a5{
+   font-size: larger;
+    font-size: larger;
+}
