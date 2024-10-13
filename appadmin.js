@@ -48,29 +48,31 @@ orderForm.addEventListener('submit', function(e) {
     }
     
     const order = {
-        id: Date.now(), // ID for each order
+        id: Date.now(), 
         customerName,
         serviceType,
         status: 'Pending',
-        price
+        price,
+        time 
     };
+    
     
     addOrder(order);
     saveOrderToLocal(order);
-    orderForm.reset(); // reset form
+    orderForm.reset(); 
 });
 
 // Function to add order to the table
 function addOrder(order) {
     const row = document.createElement('tr');
-    row.setAttribute('data-id', order.id); // making the id stoere
+    row.setAttribute('data-id', order.id); 
     
     row.innerHTML = `
-        <td>${order.customerName}</td>
-        <td>${order.serviceType}</td>
-        <td>${order.status}</td>
-        <td> ${time} Days </td>
-        <td>${order.price}</td>
+    <td>${order.customerName}</td>
+    <td>${order.serviceType}</td>
+    <td>${order.status}</td>
+    <td class="price-cell">${order.price}</td> 
+    <td class="time-cell">${order.time} Days</td>  
         <td>
             <button onclick="updateStatus(this)">Update Status</button>
             <button onclick="deleteOrder(this)">Delete</button>
@@ -81,9 +83,44 @@ function addOrder(order) {
     
     orderList.appendChild(row);
 }
-function IncreaseTime(){
-    time = time++;
+
+function IncreaseTime(button) {
+    const row = button.parentElement.parentElement;
+    const orderId = row.getAttribute('data-id'); 
+    const timeCell = row.querySelector('.time-cell'); 
+    let currentTime = parseInt(timeCell.textContent); 
+    currentTime += 1; 
+    timeCell.textContent = `${currentTime} Days`; 
+    
+    // Update the time in localStorage
+    updateOrderTimeInLocalStorage(orderId, currentTime);
 }
+
+function DecreaseTime(button) {
+    const row = button.parentElement.parentElement;
+    const orderId = row.getAttribute('data-id');  
+    const timeCell = row.querySelector('.time-cell');
+    let currentTime = parseInt(timeCell.textContent);
+    if (currentTime > 1) {
+        currentTime -= 1;
+        timeCell.textContent = `${currentTime} Days`;
+
+        updateOrderTimeInLocalStorage(orderId, currentTime);
+    }
+}
+function updateOrderTimeInLocalStorage(orderId, newTime) {
+    let orders = JSON.parse(localStorage.getItem('orders')) || [];
+    
+    orders = orders.map(order => {
+        if (order.id == orderId) {
+            order.time = newTime;
+        }
+        return order;
+    });
+    
+    localStorage.setItem('orders', JSON.stringify(orders));
+}
+
 
 // Function to save order to localStorage
 function saveOrderToLocal(order) {

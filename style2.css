@@ -37,13 +37,17 @@
 }
 #b1
 {
+    padding-right: 5%;
     font-size: xx-large;
-  color: azure;
+
+
   padding-right: 4%;
+  color: #ffffff;
   background-color: black;
 }
 #b2
 {
+  
     font-size: xx-large;
     background-color: bisque;
 }
@@ -65,7 +69,10 @@
 .a5{
    font-size: larger;
     font-size: larger;
-    border-color: green;
+
+
+    background-color:#4CAf50;
+
 }
 .h1
 {
@@ -80,11 +87,13 @@
 }
 .imgs
 {
-  display: flex;
+  
   
 }
 .im
 {
     padding-left: 8%;
-padding-top: 4%;
+}
+.imgs{
+    display: flex;
 }

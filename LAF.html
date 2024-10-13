@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#posts {
+    list-style: none;
+    padding: 0;
+}
+
+.post {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+    </header>
+    
+    <main>
+        <section id="postFormSection">
+            <h2>Report a Lost or Found Item</h2>
+            <form id="postForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="file" id="itemImage">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="postList">
+            <h2>Items</h2>
+            <ul id="posts">
+                <!-- Posts will come from website -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h2>Tips to Avoid Losing Items</h2>
+    <ul>
+        <li>Label your clothes</li>
+        <li>Check pockets before washing</li>
+        <li>Keep track of your items during laundry</li>
+    </ul>
+    </footer>
+
+    <script src="scriptLAF.js"></script>
+</body>
+</html>
