@@ -6,7 +6,7 @@
     
     height: 100px;
     background-color: rgb(255, 255, 255);
-    word-spacing: 20px;
+    word-spacing: 17px;
 
     font-size: x-large;
    
@@ -39,6 +39,7 @@
 {
     font-size: xx-large;
   color: azure;
+  padding-right: 4%;
   background-color: black;
 }
 #b2
@@ -64,4 +65,26 @@
 .a5{
    font-size: larger;
     font-size: larger;
+    border-color: green;
+}
+.h1
+{
+    font-size: 70px;
+    font-family: ;
+    display: inline;
+    
+}
+.h2
+{
+    font-size: 30px;
+}
+.imgs
+{
+  display: flex;
+  
+}
+.im
+{
+    padding-left: 8%;
+padding-top: 4%;
 }

@@ -11,6 +11,14 @@ h1 {
     text-align: center;
     color: #333;
 }
+.header
+{
+    align-content: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: cyan;
+    box-shadow: #ddd;
+}
 
 
 table {
