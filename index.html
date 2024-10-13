@@ -9,25 +9,33 @@
 <body>
     <div class="container">
       <div class="header">  <h2>Laundry Management System</h2>
-        </div>
+      </div>
         <!-- Order Form -->
-       
-        <form id="orderForm">
+        <div class="entry"><form id="orderForm">
+            <div class="nm">
             <label>Customer Name:</label>
             <input type="text" id="customerName" required class="cus">
-            
+        </div>
+        <div class="in">
             <label id="cus2">Service Type:</label>
             <select id="serviceType">
                 <option>Washing</option>
                 <option>Ironing</option>
                 <option>Dry Cleaning</option>
             </select>
+        </div>
+        <div class="pr">
             
             <label id="cus3">Price:</label>
             <input type="number" id="price" required>
+        </div>
+        <div class="btnsub">
             
-            <button type="submit">Add Order</button>
-        </form></div>
+            <button type="submit" class="btn">Add Order</button>
+        </div>
+        </div>
+       
+        
     
         <!-- Order List -->
         <h3>Current Orders</h3>
@@ -39,6 +47,7 @@
                     <th id="th">Service Type</th>
                     <th id="th">Status</th>
                     <th id="th">Price</th>
+                    <th id="th">Time</th>
                     <th id="th">Action</th>
 
 
@@ -46,10 +55,10 @@
             </thead>
             <tbody id="orderList"></tbody>
         </table>
-        <div>
+        
             
-        </div>
-
+        
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
