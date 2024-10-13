@@ -45,7 +45,8 @@ orderForm.addEventListener('submit', function(e) {
         customerName,
         serviceType,
         status: 'Pending',
-        price
+        price,
+        time
     };
     
     addOrder(order);
@@ -61,7 +62,7 @@ function addOrder(order) {
         <td>${order.serviceType}</td>
         <td>${order.status}</td>
         <td>${order.price}</td>
-       <td class="Timeupd"> 3 Days </td>
+        <td class="time-cell">${order.time || time} Days</td> 
         <td>
             <button onclick="deleteOrder(this)">Delete</button>
         </td>

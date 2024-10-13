@@ -6,7 +6,7 @@
     
     height: 100px;
     background-color: rgb(255, 255, 255);
-    word-spacing: 20px;
+    word-spacing: 17px;
 
     font-size: x-large;
    
@@ -37,12 +37,14 @@
 }
 #b1
 {
+    padding-right: 5%;
     font-size: xx-large;
-  color: azure;
+  color: #ffffff;
   background-color: black;
 }
 #b2
 {
+  
     font-size: xx-large;
     background-color: bisque;
 }
@@ -64,4 +66,28 @@
 .a5{
    font-size: larger;
     font-size: larger;
+    background-color:#4CAf50;
+}
+.h1
+{
+    font-size: 70px;
+    font-family: ;
+    display: inline;
+    
+}
+.h2
+{
+    font-size: 30px;
+}
+.imgs
+{
+  
+  
+}
+.im
+{
+    padding-left: 8%;
+}
+.imgs{
+    display: flex;
 }
