@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spark Wash Tech</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Effortless Laundry</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <div class="container">
-      <div class="header">  <h2>Laundry Management System</h2>
-      </div>
-        <!-- Order Form -->
-        <div class="entry"><form id="orderForm">
-            <div class="nm">
-            <label>Customer Name:</label>
-            <input type="text" id="customerName" required class="cus">
-        </div>
-        <div class="in">
-            <label id="cus2">Service Type:</label>
-            <select id="serviceType">
-                <option>Washing</option>
-                <option>Ironing</option>
-                <option>Dry Cleaning</option>
-            </select>
-        </div>
-        <div class="pr">
-            
-            <label id="cus3">Price:</label>
-            <input type="number" id="price" required>
-        </div>
-        <div class="btnsub">
-            
-            <button type="submit" class="btn">Add Order</button>
-        </div>
-        </div>
-       
-        
-    
-        <!-- Order List -->
-        <h3>Current Orders</h3>
-        <table id="orderTable">
-            <thead>
-                <tr>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png.jpg" alt="sparkwash tech logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index1.html">Services</a></li>
+                <li><a href="LAF.html">LAF</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">User Account</a></li>
+            </ul>
+            <a href="#" class="btn get-started">Get Started</a>
+        </nav>
+    </header>
 
-                    <th id="th">Customer Name</th>
-                    <th id="th">Service Type</th>
-                    <th id="th">Status</th>
-                    <th id="th">Price</th>
-                    <th id="th">Time</th>
-                    <th id="th">Action</th>
+    <section class="hero">
 
-
-                </tr>
-            </thead>
-            <tbody id="orderList"></tbody>
-        </table>
-        
+        <div class="hero-content">
+            <h1>Experience Effortless Laundry</h1>
+            <p>SparkWash Tech offers a seamless laundry service for hostel students. Enjoy hassle-free washing, drying, and ironing with just a few clicks. Sign up now to get started!</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn login">Log In</a>
+                <a href="#" class="btn signup">Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Laundry Services</h2>
+                <p>Discover our comprehensive laundry services designed to meet all your needs. From washing and drying to ironing, we ensure your clothes are returned in pristine condition. Enjoy the convenience and quality of sparkwash tech.</p>
+            </div>
             
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="washing.webp" alt="Washing Service">
+                    <h3>Washing Service</h3>
+                </div>
+                <div class="service-card">
+                    <img src="drymach.jpg" alt="Drying Service">
+                    <h3>Drying Service</h3>
+                </div>
+                <div class="service-card">
+                    <img src="iron.jpeg" alt="Ironing Service">
+                    <h3>Ironing Service</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
         
-    </div>
-    <div class="LAF" style="align-items: center;"> <a href="LAF.html"><button class="LAF" >Lost And Found</button></a></div>
-    <script src="app.js"></script>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Washing Service</h3>
+                <p>Our washing service ensures your clothes are thoroughly cleaned using high-quality detergents and advanced washing machines.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Drying Service</h3>
+                <p>Our drying service uses state-of-the-art dryers to ensure your clothes are perfectly dried and ready to wear.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Ironing Service</h3>
+                <p>Our ironing service guarantees wrinkle-free clothes, giving you a polished and professional look every time.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="submit-clothes">
+            <h3>Submit Your Clothes</h3>
+            <p>Easily submit your clothes for laundry service. Just fill in the number of shirts, pants, t-shirts, and blankets you need cleaned.</p>
+            <form>
+                <input type="text" placeholder="Number of clothes">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

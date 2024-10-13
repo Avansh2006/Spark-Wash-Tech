@@ -68,11 +68,11 @@ function addOrder(order) {
     row.setAttribute('data-id', order.id); 
     
     row.innerHTML = `
-    <td>${order.customerName}</td>
-    <td>${order.serviceType}</td>
-    <td>${order.status}</td>
-    <td class="price-cell">${order.price}</td> 
-    <td class="time-cell">${order.time} Days</td>  
+         <td>${order.customerName}</td>
+        <td>${order.serviceType}</td>
+        <td>${order.status}</td>
+        <td class="price-cell">${order.price}</td> 
+        <td class="time-cell">${order.time} Days</td>  
         <td>
             <button onclick="updateStatus(this)">Update Status</button>
             <button onclick="deleteOrder(this)">Delete</button>

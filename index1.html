@@ -3,61 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page2</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Spark Wash Tech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head">
-       <img src="topcorner.jpg" alt="no img" width="350px" class="img1">
+    <div class="container">
+      <div class="header">  <h2>Laundry Management System</h2>
+      </div>
+        <!-- Order Form -->
+        <div class="entry"><form id="orderForm">
+            <div class="nm">
+            <label>Customer Name:</label>
+            <input type="text" id="customerName" required class="cus">
+        </div>
+        <div class="in">
+            <label id="cus2">Service Type:</label>
+            <select id="serviceType">
+                <option>Washing</option>
+                <option>Ironing</option>
+                <option>Dry Cleaning</option>
+            </select>
+        </div>
+        <div class="pr">
+            
+            <label id="cus3">Price:</label>
+            <input type="number" id="price" required>
+        </div>
+        <div class="btnsub">
+            
+            <button type="submit" class="btn">Add Order</button>
+        </div>
+        </div>
        
-        <a href="index.html" class="a">Servies</a>
-        <a href="#" class="a1">FAQs</a>
-        <a href="#" class="a3">Contact</a>
-        <a href="#" class="a4">Useraccount</a>
-        <button class="a5">Get Sarted</button>
-   
-     
-    </div>
-
-<div class="head3" >
-    <img src="graphica.jpeg" alt="no img" height="800px" width="1680">
-    <div class="content">
-        <h1 id="h1">Experience Effortless  Laundry</h1>
-        <p id="p1">SparkWash Tech offers a seamless laundry service for 
-            hostel students.
-             Enjoy hassle-free washing, drying, 
-            and ironing with just a few clicks. Sign up now to get started</p><br><br><br><br>
-          <button id="b1">login </button>
-
-
-
-
-            <button id="b2">sign up</button>
-    </div>
-
-</div>
+        
     
-    <div>
-        <h1 class="h1">
-            Our loundry services:-
-          
-        </h1>
-<pre class="h2"> Discover our comprehensive loundry servises designed to 
- meet all the your needs. From washing services designed to ironing.
- We ensure your cloths are returned in prinstine condition
- enjoy the convennience and quality of sparkwash tech.
-</pre>
+        <!-- Order List -->
+        <h3>Current Orders</h3>
+        <table id="orderTable">
+            <thead>
+                <tr>
 
-<div class="imgs">
-    <img src="washing.webp" alt="no imgs" height="400px" width="400px" class="im">
-
+                    <th id="th">Customer Name</th>
+                    <th id="th">Service Type</th>
+                    <th id="th">Status</th>
+                    <th id="th">Price</th>
+                    <th id="th">Time</th>
+                    <th id="th">Action</th>
 
 
-    <img src="drymach.jpg" alt="no imgs" height="400px" width="400px" class="im">
-
-
-    <img src="iron.jpeg" alt="no imgs" height="400px" width="400px" class="im">
-</div>
- 
+                </tr>
+            </thead>
+            <tbody id="orderList"></tbody>
+        </table>
+        
+            
+        
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

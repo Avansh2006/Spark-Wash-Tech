@@ -30,7 +30,7 @@ async function getWeather() {
 
 // Check weather conditions and update the default time
 function checkWeatherCondition(data) {
-    const weather = data.weather[0].main.toLowerCase(); // Get the main weather condition
+    const weather = data.weather[0].main.toLowerCase(); 
 
     if (weather === 'clear') {
         defaultTime = 3;
@@ -54,12 +54,12 @@ orderForm.addEventListener('submit', function (e) {
         serviceType,
         status: 'Pending',
         price,
-        time: defaultTime // Use the updated default time
+        time: defaultTime 
     };
 
     addOrder(order);
     saveOrderToLocal(order);
-    orderForm.reset();  // Clear the form fields
+    orderForm.reset();  
 });
 
 // Function to add order to the table
@@ -101,7 +101,7 @@ function loadOrders() {
 // Delete order from table and localStorage
 function deleteOrder(button) {
     const row = button.parentElement.parentElement;
-    const customerName = row.cells[0].textContent;  // Get customer name for identification
+    const customerName = row.cells[0].textContent;  
     row.remove();  // Remove from DOM
 
     // Update localStorage by removing the deleted order
