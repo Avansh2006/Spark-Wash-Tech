@@ -13,3 +13,31 @@ h2{
 {
     padding-top:5px ;
 }
+#th
+{
+    padding-right: 150px;
+}
+#orderTable
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cus
+{
+    padding-right: 70px;
+}
+#cus2
+{
+    padding-left: 100px;
+}
+#cus3
+{
+    padding-left: 100px;
+}
+#orderform
+{
+  padding-top: 2ch;
+}
+.table
+{
+    height: 50%;
+}
