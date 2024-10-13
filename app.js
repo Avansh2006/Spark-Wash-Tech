@@ -4,6 +4,34 @@ const orderList = document.getElementById('orderList');
 
 // Load orders from localStorage on page load
 document.addEventListener('DOMContentLoaded', loadOrders);
+//  weather api hitting
+async function getWeather() {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=bd715d805d5ee9e79ed805b352a99269&units=metric`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (response.status === 200) {
+            checkWeatherCondition(data);
+        } else {
+            document.getElementById('weatherInfo').textContent = 'Some Error in API';
+        }
+    } catch (error) {
+        document.getElementById('weatherInfo').textContent = 'Error fetching weather data.';
+        console.error(error);
+    }
+}
+function  checkWeatherCondition(data){
+    const weather = data.weather[0].main.toLowerCase(); // gives the main weather from api
+
+    if (weather === 'clear') {
+        document.getElementsByClassName('Timeupd').innerText = '3 Days'; 
+    } else if (weather === 'rain') {
+        document.getElementsByClassName('Timeupd').innerText = '5 Days';
+    } else {
+        document.getElementsByClassName('Timeupd').innerText = '4 Days';
+    }
+}
 
 // Add new order
 orderForm.addEventListener('submit', function(e) {
@@ -33,8 +61,8 @@ function addOrder(order) {
         <td>${order.serviceType}</td>
         <td>${order.status}</td>
         <td>${order.price}</td>
+       <td class="Timeupd"> 3 Days </td>
         <td>
-            <button onclick="updateStatus(this)">Update Status</button>
             <button onclick="deleteOrder(this)">Delete</button>
         </td>
     `;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Wash Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">  <h2>Laundry Management System</h2>
+        </div>
+        <!-- Order Form -->
+       
+        <form id="orderForm">
+            <label>Customer Name:</label>
+            <input type="text" id="customerName" required >
+            
+            <label>Service Type:</label>
+            <select id="serviceType">
+                <option>Washing</option>
+                <option>Ironing</option>
+                <option>Dry Cleaning</option>
+            </select>
+            
+            <label>Price:</label>
+            <input type="number" id="price" required>
+            
+            <button type="submit">Add Order</button>
+        </form></div>
+    
+        <!-- Order List -->
+        <h3>Current Orders</h3>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Service Type</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="orderList"></tbody>
+        </table>
+ 
+    <script src="appadmin.js"></script>
+</body>
+</html>
