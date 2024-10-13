@@ -37,11 +37,11 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #5F1928;
+    color: #5cb85c;
 }
 
 .btn.get-started {
-    background-color: #5F1928;
+    background-color: #5cb85c;
     color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -50,10 +50,10 @@ body {
 }
 
 .btn.get-started:hover {
-    background-color: #45101e;
+    background-color: #81c781;
 }
 
-/* Hero Section */
+
 .hero {
     background-image: url('backgroundsexy.webp');
     background-size: cover;
@@ -85,7 +85,7 @@ body {
 }
 
 .hero-buttons .btn {
-    background-color: #5F1928;
+    background-color: #5cb85c;
     color: white;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -95,10 +95,10 @@ body {
 }
 
 .hero-buttons .btn:hover {
-    background-color: #45101e;
+    background-color: #5cb85c;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -117,7 +117,7 @@ body {
     width: 100px;
     height: 30px;
 }
-/* Services Section */
+
 .services-section {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
@@ -167,14 +167,13 @@ body {
 .service-card h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
-    color: #5F1928;
+    color: #5cb85c;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .services-grid {
         flex-direction: column;
@@ -223,7 +222,7 @@ h2 {
 .service-box a {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #5c1c1c;
+    background-color: #5cb85c;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -238,7 +237,7 @@ h2 {
 }
 .submit-clothes button {
     padding: 10px 15px;
-    background-color: #5c1c1c;
+    background-color: #5cb85c;
     color: white;
     border: none;
     cursor: pointer;

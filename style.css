@@ -79,7 +79,16 @@ button:hover {
     background-color: #45a049;
     color: white;
 }
-
+.LAF{
+    background-color: #4CAF50;
+    width: auto;
+    &:hover{
+        background-color: #31cc36;
+    }
+}
+button.LAF {
+    transform: translateX(44em);
+}
 
 @media (max-width: 600px) {
     table {
